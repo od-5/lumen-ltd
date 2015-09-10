@@ -1,0 +1,8 @@
+.calculator {
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+.calculator__title {
+  color: #029a3b;
+  text-transform: none;
+}

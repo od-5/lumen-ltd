@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block content %}
+  {% include '__includes/header.html' %}
+  {% include '__includes/contract.html' %}
+  <section class="ticket-1 ticket-horizontal">
+    <p class="ticket-horizontal__title">Оставить заявку на консультацию нашего специалиста</p>
+    {% include "__includes/ticket_horizontal.html" %}
+  </section>
+  {% include '__includes/products.html' %}
+  {% include '__includes/stage.html' %}
+  <section class="ticket-2 ticket-horizontal">
+    <p class="ticket-horizontal__title">Оставить заявку на техническое обследование объекта</p>
+    {% include "__includes/ticket_horizontal.html" %}
+  </section>
+  {% include '__includes/calculator.html' %}
+  <section class="ticket-3 ticket-horizontal">
+    <p class="ticket-horizontal__title">Оставить заявку на расчёт окупаемоти срока энергосервисного контракта</p>
+    {% include "__includes/ticket_horizontal.html" %}
+  </section>
+  {% include '__includes/geography.html' %}
+  {% include '__includes/certificate.html' %}
+  <section class="ticket">
+    <div class="grid_8">
+      <p class="ticket__title">ОСТАВИТЬ ЗАЯВКУ <br> на составление контракта</p>
+    </div>
+    <div class="grid_4">
+      <div class="ticket-form">
+        {% include '__includes/ticket_horizontal.html' %}
+      </div>
+    </div>
+    <div class="clear"></div>
+  </section>
+  {% include '__includes/footer.html' %}
+{% endblock %}

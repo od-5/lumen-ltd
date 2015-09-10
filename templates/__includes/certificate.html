@@ -1,0 +1,13 @@
+<div class="certificate">
+  <p class="certificate__title">Вся продукция сертифицирована согласно ГОСТ Р</p>
+  <div class="certificate-container">
+    <div class="certificate-container-list">
+      {% for foo in '1234' %}
+        <div class="certificate-container-list-item">
+          <img src="{{ STATIC_URL }}img/sert.jpg">
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>

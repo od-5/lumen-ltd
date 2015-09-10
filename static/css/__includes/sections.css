@@ -1,0 +1,153 @@
+.section-video {
+  background: url('../img/section-video__bg.jpg') 50% 0 no-repeat;
+  background-size: cover;
+}
+.section-video-container {
+  background: url("../img/tv.png") 0 0 no-repeat;
+  height: 653px;
+  padding-bottom: 10px;
+}
+.section-video-container iframe {
+  margin: 39px;
+}
+.section-advantage {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,cccccc+100;Gren+3D */
+
+  background: #eeeeee;
+  /* Old browsers */
+
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNlZWVlZWUiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjY2NjY2NjIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-radial-gradient(center, ellipse cover, #eeeeee 0%, #cccccc 100%);
+  /* FF3.6+ */
+
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #eeeeee), color-stop(100%, #cccccc));
+  /* Chrome,Safari4+ */
+
+  background: -webkit-radial-gradient(center, ellipse cover, #eeeeee 0%, #cccccc 100%);
+  /* Chrome10+,Safari5.1+ */
+
+  background: -o-radial-gradient(center, ellipse cover, #eeeeee 0%, #cccccc 100%);
+  /* Opera 12+ */
+
+  background: -ms-radial-gradient(center, ellipse cover, #eeeeee 0%, #cccccc 100%);
+  /* IE10+ */
+
+  background: radial-gradient(ellipse at center, #eeeeee 0%, #cccccc 100%);
+  /* W3C */
+
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#eeeeee', endColorstr='#cccccc', GradientType=1);
+  /* IE6-8 fallback on horizontal gradient */
+
+}
+.section-advantage-container {
+  background: url("../img/man.png") 95% 50% no-repeat;
+  background-size: contain;
+}
+.section-advantage-list {
+  list-style: none;
+}
+.section-advantage-list-item {
+  font-size: 30px;
+  text-shadow: 1px 1px 0 #333;
+  color: #999;
+}
+.section-advantage-button {
+  padding: 24px 50px;
+  margin: 50px 0;
+  display: inline-block;
+}
+.section-address {
+  background: url('../img/section-advantage__bg.jpg') 50% 0 no-repeat;
+  background-size: cover;
+}
+.section-address-container-item {
+  margin-bottom: 20px;
+}
+.section-address-container-item-link {
+  position: relative;
+  height: 189px;
+  border-radius: 6px;
+  display: block;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 5px #000;
+  -moz-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+}
+.section-address-container-item-link-back {
+  display: none;
+  background-color: rgba(75, 202, 255, 0.69);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 3px #333;
+  vertical-align: middle;
+  text-align: center;
+  padding-top: 60px;
+}
+.section-address-container-item-link:hover {
+  -webkit-box-shadow: 0 0 5px #fff;
+  -moz-box-shadow: 0 0 5px #fff;
+  box-shadow: 0 0 5px #fff;
+}
+.section-address-container-item-link__image {
+  width: 100%;
+  height: 100%;
+}
+.section-address-container-item-link__title {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  background: rgba(51, 51, 51, 0.82);
+  font-size: 15px;
+  color: #4bcaff;
+}
+.section-address-ticket {
+  padding: 20px 0;
+  background-color: #4e4e4e;
+  -webkit-box-shadow: 0 0 2px #f1efde;
+  -moz-box-shadow: 0 0 2px #f1efde;
+  box-shadow: 0 0 2px #f1efde;
+  margin: 40px 0;
+}
+.section-address-ticket:hover {
+  -webkit-box-shadow: 0 0 15px #f1efde;
+  -moz-box-shadow: 0 0 15px #f1efde;
+  box-shadow: 0 0 15px #f1efde;
+}
+.section-address-ticket-button {
+  margin-bottom: 0;
+}
+.section-address-ticket__title {
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 8px;
+}
+.section-work {
+  background: #fdfdfd;
+}
+.section-work-list {
+  margin-top: 20px;
+}
+.section-work-list-item {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.section-work-list-item__text {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin: 0;
+}

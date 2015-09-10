@@ -1,0 +1,578 @@
+/*
+  960 Grid System ~ Core CSS.
+  Learn more ~ http://960.gs/
+
+  Licensed under GPL and MIT.
+
+  Forces backgrounds to span full width,
+  even if there is horizontal scrolling.
+  Increase this if your layout is wider.
+
+  Note: IE6 works fine without this fix.
+
+  zoom:1 rule is specifically for IE6 + IE7.
+  Move to separate stylesheet if invalid CSS is a problem.
+
+  Convert to less compatible by Adrian Lee
+  email: adrian [at] radianstudio [dot] com
+*/
+body {
+  min-width: 960px;
+}
+.clearboth {
+  clear: both;
+}
+.clearbasic {
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+/* `Container */
+.container_12 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  zoom: 1;
+}
+.container_12:before, .container_12:after {
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  content: '.';
+  font-size: 0;
+  line-height: 0;
+}
+.container_12:after {
+  clear: both;
+}
+.container_12 .grid_1 {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 60px;
+}
+.container_12 .grid_2 {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 140px;
+}
+.container_12 .grid_3 {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 220px;
+}
+.container_12 .grid_4 {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 300px;
+}
+.container_12 .grid_5 {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 380px;
+}
+.container_12 .grid_6 {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 460px;
+}
+.container_12 .grid_7 {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 540px;
+}
+.container_12 .grid_8 {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 620px;
+}
+.container_12 .grid_9 {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 700px;
+}
+.container_12 .grid_10 {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 780px;
+}
+.container_12 .grid_11 {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 860px;
+}
+.container_12 .grid_12 {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 940px;
+}
+.container_12 .prefix_1 {
+  padding-left: 80px;
+}
+.container_12 .prefix_2 {
+  padding-left: 160px;
+}
+.container_12 .prefix_3 {
+  padding-left: 240px;
+}
+.container_12 .prefix_4 {
+  padding-left: 320px;
+}
+.container_12 .prefix_5 {
+  padding-left: 400px;
+}
+.container_12 .prefix_6 {
+  padding-left: 480px;
+}
+.container_12 .prefix_7 {
+  padding-left: 560px;
+}
+.container_12 .prefix_8 {
+  padding-left: 640px;
+}
+.container_12 .prefix_9 {
+  padding-left: 720px;
+}
+.container_12 .prefix_10 {
+  padding-left: 800px;
+}
+.container_12 .prefix_11 {
+  padding-left: 880px;
+}
+.container_12 .suffix_1 {
+  padding-right: 80px;
+}
+.container_12 .suffix_2 {
+  padding-right: 160px;
+}
+.container_12 .suffix_3 {
+  padding-right: 240px;
+}
+.container_12 .suffix_4 {
+  padding-right: 320px;
+}
+.container_12 .suffix_5 {
+  padding-right: 400px;
+}
+.container_12 .suffix_6 {
+  padding-right: 480px;
+}
+.container_12 .suffix_7 {
+  padding-right: 560px;
+}
+.container_12 .suffix_8 {
+  padding-right: 640px;
+}
+.container_12 .suffix_9 {
+  padding-right: 720px;
+}
+.container_12 .suffix_10 {
+  padding-right: 800px;
+}
+.container_12 .suffix_11 {
+  padding-right: 880px;
+}
+.container_12 .push_1 {
+  position: relative;
+  left: 80px;
+}
+.container_12 .push_2 {
+  position: relative;
+  left: 160px;
+}
+.container_12 .push_3 {
+  position: relative;
+  left: 240px;
+}
+.container_12 .push_4 {
+  position: relative;
+  left: 320px;
+}
+.container_12 .push_5 {
+  position: relative;
+  left: 400px;
+}
+.container_12 .push_6 {
+  position: relative;
+  left: 480px;
+}
+.container_12 .push_7 {
+  position: relative;
+  left: 560px;
+}
+.container_12 .push_8 {
+  position: relative;
+  left: 640px;
+}
+.container_12 .push_9 {
+  position: relative;
+  left: 720px;
+}
+.container_12 .push_10 {
+  position: relative;
+  left: 800px;
+}
+.container_12 .push_11 {
+  position: relative;
+  left: 880px;
+}
+.container_12 .pull_1 {
+  position: relative;
+  left: -80px;
+}
+.container_12 .pull_2 {
+  position: relative;
+  left: -160px;
+}
+.container_12 .pull_3 {
+  position: relative;
+  left: -240px;
+}
+.container_12 .pull_4 {
+  position: relative;
+  left: -320px;
+}
+.container_12 .pull_5 {
+  position: relative;
+  left: -400px;
+}
+.container_12 .pull_6 {
+  position: relative;
+  left: -480px;
+}
+.container_12 .pull_7 {
+  position: relative;
+  left: -560px;
+}
+.container_12 .pull_8 {
+  position: relative;
+  left: -640px;
+}
+.container_12 .pull_9 {
+  position: relative;
+  left: -720px;
+}
+.container_12 .pull_10 {
+  position: relative;
+  left: -800px;
+}
+.container_12 .pull_11 {
+  position: relative;
+  left: -880px;
+}
+.container_16 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  zoom: 1;
+}
+.container_16:before, .container_16:after {
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  content: '.';
+  font-size: 0;
+  line-height: 0;
+}
+.container_16:after {
+  clear: both;
+}
+.container_16 .grid_1 {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 40px;
+}
+.container_16 .grid_2 {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 100px;
+}
+.container_16 .grid_3 {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 160px;
+}
+.container_16 .grid_4 {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 220px;
+}
+.container_16 .grid_5 {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 280px;
+}
+.container_16 .grid_6 {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 340px;
+}
+.container_16 .grid_7 {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 400px;
+}
+.container_16 .grid_8 {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 460px;
+}
+.container_16 .grid_9 {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 520px;
+}
+.container_16 .grid_10 {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 580px;
+}
+.container_16 .grid_11 {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 640px;
+}
+.container_16 .grid_12 {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 700px;
+}
+.container_16 .prefix_1 {
+  padding-left: 60px;
+}
+.container_16 .prefix_2 {
+  padding-left: 120px;
+}
+.container_16 .prefix_3 {
+  padding-left: 180px;
+}
+.container_16 .prefix_4 {
+  padding-left: 240px;
+}
+.container_16 .prefix_5 {
+  padding-left: 300px;
+}
+.container_16 .prefix_6 {
+  padding-left: 360px;
+}
+.container_16 .prefix_7 {
+  padding-left: 420px;
+}
+.container_16 .prefix_8 {
+  padding-left: 480px;
+}
+.container_16 .prefix_9 {
+  padding-left: 540px;
+}
+.container_16 .prefix_10 {
+  padding-left: 600px;
+}
+.container_16 .prefix_11 {
+  padding-left: 660px;
+}
+.container_16 .suffix_1 {
+  padding-right: 60px;
+}
+.container_16 .suffix_2 {
+  padding-right: 120px;
+}
+.container_16 .suffix_3 {
+  padding-right: 180px;
+}
+.container_16 .suffix_4 {
+  padding-right: 240px;
+}
+.container_16 .suffix_5 {
+  padding-right: 300px;
+}
+.container_16 .suffix_6 {
+  padding-right: 360px;
+}
+.container_16 .suffix_7 {
+  padding-right: 420px;
+}
+.container_16 .suffix_8 {
+  padding-right: 480px;
+}
+.container_16 .suffix_9 {
+  padding-right: 540px;
+}
+.container_16 .suffix_10 {
+  padding-right: 600px;
+}
+.container_16 .suffix_11 {
+  padding-right: 660px;
+}
+.container_16 .push_1 {
+  position: relative;
+  left: 60px;
+}
+.container_16 .push_2 {
+  position: relative;
+  left: 120px;
+}
+.container_16 .push_3 {
+  position: relative;
+  left: 180px;
+}
+.container_16 .push_4 {
+  position: relative;
+  left: 240px;
+}
+.container_16 .push_5 {
+  position: relative;
+  left: 300px;
+}
+.container_16 .push_6 {
+  position: relative;
+  left: 360px;
+}
+.container_16 .push_7 {
+  position: relative;
+  left: 420px;
+}
+.container_16 .push_8 {
+  position: relative;
+  left: 480px;
+}
+.container_16 .push_9 {
+  position: relative;
+  left: 540px;
+}
+.container_16 .push_10 {
+  position: relative;
+  left: 600px;
+}
+.container_16 .push_11 {
+  position: relative;
+  left: 660px;
+}
+.container_16 .pull_1 {
+  position: relative;
+  left: -60px;
+}
+.container_16 .pull_2 {
+  position: relative;
+  left: -120px;
+}
+.container_16 .pull_3 {
+  position: relative;
+  left: -180px;
+}
+.container_16 .pull_4 {
+  position: relative;
+  left: -240px;
+}
+.container_16 .pull_5 {
+  position: relative;
+  left: -300px;
+}
+.container_16 .pull_6 {
+  position: relative;
+  left: -360px;
+}
+.container_16 .pull_7 {
+  position: relative;
+  left: -420px;
+}
+.container_16 .pull_8 {
+  position: relative;
+  left: -480px;
+}
+.container_16 .pull_9 {
+  position: relative;
+  left: -540px;
+}
+.container_16 .pull_10 {
+  position: relative;
+  left: -600px;
+}
+.container_16 .pull_11 {
+  position: relative;
+  left: -660px;
+}
+/* Grid >> Children (Alpha ~ First, Omega ~ Last) */
+.alpha {
+  margin-left: 0;
+}
+.omega {
+  margin-right: 0;
+}
+/* Clear Floated Elements */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  content: '.';
+  font-size: 0;
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}

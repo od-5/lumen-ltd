@@ -1,0 +1,14 @@
+<form action="{% url 'ticket' %}" method="post" id="ticket1" class="ticket-horizontal-form">{% csrf_token %}
+{#  <input type="text" name="name" placeholder="Ваше имя">#}
+{#  <input type="text" name="phone" placeholder="Ваш телефон">#}
+{#  <select name="area" id="">#}
+{#    <option value="0">Выбор района</option>#}
+{#    <option value="1">Район 1</option>#}
+{#    <option value="2">Район 2</option>#}
+{#  </select>#}
+  {% load widget_tweaks %}
+  {{ form.name|attr:'placeholder:Ваше имя' }}
+  {{ form.phone|attr:'placeholder:Ваш телефон' }}
+  {{ form.email|attr:'placeholder:Ваш e-mail' }}
+  <input type="submit" value="Отправить заявку" class="button">
+</form>

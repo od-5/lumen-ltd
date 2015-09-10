@@ -1,0 +1,41 @@
+.contract {
+  padding-top: 48px;
+  padding-bottom: 36px;
+}
+.contract__title {
+  color: #029a3b;
+}
+.contract-container-item__icon {
+  width: 100%;
+  height: 96px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.contract-container-item__icon_1 {
+  background-image: url('../img/contract/icon_1.png');
+}
+.contract-container-item__icon_2 {
+  background-image: url('../img/contract/icon_2.png');
+}
+.contract-container-item__icon_3 {
+  background-image: url('../img/contract/icon_3.png');
+}
+.contract-container-item__icon_4 {
+  background-image: url('../img/contract/icon_4.png');
+}
+.contract-container-item__icon_5 {
+  background-image: url('../img/contract/icon_5.png');
+}
+.contract-container-item__title {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: #029a3b;
+  height: 48px;
+  margin-bottom: 20px;
+}
+.contract-container-item__text {
+  font-size: 14px;
+  text-align: center;
+}

@@ -1,0 +1,95 @@
+.header {
+
+  &-left {
+
+  }
+  &-right {
+    text-align: right;
+  }
+  &-phone {
+    color: #029a3b;
+    &__number {
+      font-size: 18px;
+      position: relative;
+      display: inline;
+      &:before {
+        content: ' ';
+        display: block;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        background-image: url('../img/icon/icon-phone.png');
+        background-repeat: no-repeat;
+        top: 50%;
+        left: -40px;
+      }
+    }
+    &__text {
+      font-size: 8px;
+    }
+  }
+  &-slogan {
+    margin-left: 24px;
+    margin-bottom: 26px;
+  }
+  &-nav {
+    margin-bottom: 10px;
+    &-list {
+      list-style: none;
+      margin-top: 22px;
+      &-item {
+        display: inline-block;
+        &__link {
+          font-size: 10px;
+          border-right: 1px solid #666;
+          padding: 0 10px;
+          &:hover {
+            color: #333;
+            text-shadow: 0.5px 0.5px 0 #000;
+          }
+          &:last-child {
+            border: none;
+          }
+        }
+      }
+    }
+    &-slogan {
+      text-align: center;
+      margin: 0 40px;
+    }
+  }
+  &-foto {
+    &-container {
+      position: relative;
+      img {
+        width: 100%;
+      }
+      &-triangle {
+        position: absolute;
+        width: 102px;
+        height: 90px;
+        z-index: 1;
+        &_1 {
+          top: 0;
+          left: 0;
+          background-image: url('../img/triangle_1.png');
+        }
+        &_2 {
+          bottom: 4px;
+          right: 0;
+          background-image: url('../img/triangle_2.png');
+        }
+      }
+    }
+    &__text {
+      margin-top: -6px;
+      color: #fff;
+      font-weight: bold;
+      text-align: center;
+      background-image: url('../img/header-foto__text__bg.png');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      line-height: 33px;
+    }
+  }
+}

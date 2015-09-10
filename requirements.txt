@@ -1,0 +1,6 @@
+django==1.7
+django-suit==0.2.13
+django-debug-toolbar
+django-widget-tweaks==1.4.1
+pillow==2.8.1
+django-annoying==0.8.3

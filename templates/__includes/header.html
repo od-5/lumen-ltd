@@ -1,0 +1,54 @@
+<header class="header">
+  <div class="grid_6">
+    <div class="header-logotype header-left">
+      <img src="{{ STATIC_URL }}img/logotype.png" alt="">
+    </div>
+  </div>
+  <div class="grid_6">
+    <div class="header-right">
+      <div class="header-lang">
+        <span>Выбор языка</span>
+      </div>
+      <div class="header-phone">
+        <p class="header-phone__number">{{ contacts.phone|default:'8(800)250-34-50' }}</p>
+        <p class="header-phone__text">Бесплатный звонок по всей России</p>
+      </div>
+    </div>
+  </div>
+  <div class="grid_12">
+    <p class="header-slogan">
+      Уникальное предложение для собственников объектов коммерческой недвижимости <br>
+      по экономии электроэнергии без первоначальных вложений!
+    </p>
+  </div>
+  <div class="grid_8">
+    <nav class="header-nav">
+      <ul class="header-nav-list">
+        <li class="header-nav-list-item">
+          <a href="" class="header-nav-list-item__link">Преимущества контракта</a>
+          <a href="" class="header-nav-list-item__link">Преимущества продукции</a>
+          <a href="" class="header-nav-list-item__link">Этапы контракта</a>
+          <a href="" class="header-nav-list-item__link">Калькулятор расчёта экономии</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="grid_4">
+    <p class="header-nav-slogan">
+      Сэкономленные деньги - это заработанные деньги
+    </p>
+  </div>
+  <div class="grid_12">
+    <div class="header-foto">
+      <div class="header-foto-container">
+        <img src="{{ STATIC_URL }}img/header__foto.jpg" alt="">
+        <div class="header-foto-container-triangle header-foto-container-triangle_1"></div>
+        <div class="header-foto-container-triangle header-foto-container-triangle_2"></div>
+      </div>
+      <div class="header-foto__text">
+        <p>БЕСПЛАТНО - Расчёт экономической эффективности внедрения оборудования.</p>
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</header>

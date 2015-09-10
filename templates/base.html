@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ setup.title|default:'Название сайта' }}</title>
+  <meta name="description" content="{{ setup.meta_desc|default:'' }}">
+  <meta name="keywords" content="{{ setup.meta_key|default:'' }}">
+  <script src="{{ STATIC_URL }}js/jquery-1.11.2.min.js"></script>
+  <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script src="{{ STATIC_URL }}js/jquery.form.js"></script>
+  <script src="{{ STATIC_URL }}js/jquery.validate.js"></script>
+  <script src="{{ STATIC_URL }}js/jquery.flexslider-min.js"></script>
+  <script src="{{ STATIC_URL }}js/notify-combined.min.js"></script>
+  <script src="{{ STATIC_URL }}js/jquery.viewportchecker.js"></script>
+{#  <script src="{{ STATIC_URL }}js/scrollup.js"></script>#}
+  <script src="{{ STATIC_URL }}js/common.js"></script>
+  <script src="{{ STATIC_URL }}js/map.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+  {% if setup.top_js %}
+    {{ setup.top_js }}
+  {% endif %}
+  <link href="{{ STATIC_URL }}css/style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container_12">
+{% block content %}
+{% endblock %}
+{% if setup.bottom_js %}
+  {{ setup.bottom_js }}
+{% endif %}
+    <div class="clear"></div>
+  </div>
+</body>
+</html>

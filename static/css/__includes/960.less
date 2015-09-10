@@ -1,0 +1,185 @@
+/*
+  960 Grid System ~ Core CSS.
+  Learn more ~ http://960.gs/
+
+  Licensed under GPL and MIT.
+
+  Forces backgrounds to span full width,
+  even if there is horizontal scrolling.
+  Increase this if your layout is wider.
+
+  Note: IE6 works fine without this fix.
+
+  zoom:1 rule is specifically for IE6 + IE7.
+  Move to separate stylesheet if invalid CSS is a problem.
+
+  Convert to less compatible by Adrian Lee
+  email: adrian [at] radianstudio [dot] com
+*/
+
+@mWidth: 960px;
+
+body {
+  min-width: @mWidth;
+}
+
+.grid (@size: 1, @col: 12){
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: (@mWidth/@col - 20) + (@size - 1) * (@mWidth/@col);
+}
+
+.prefix (@size: 1, @col: 12){
+    padding-left: (@mWidth / @col) * @size;
+}
+
+.suffix (@size: 1, @col: 12){
+    padding-right: (@mWidth / @col) * @size;
+}
+
+.push (@size: 1, @col: 12){
+    position: relative;
+    left: (@mWidth / @col) * @size;
+}
+
+.pull (@size: 1, @col: 12){
+    position: relative;
+    left: (-@mWidth / @col) * @size;
+}
+
+.clearboth{
+    clear: both;
+}
+
+.clearbasic {
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.sets(@col){
+    .grid_1 { .grid(1, @col); }
+    .grid_2 { .grid(2, @col); }
+    .grid_3 { .grid(3, @col); }
+    .grid_4 { .grid(4, @col); }
+    .grid_5 { .grid(5, @col); }
+    .grid_6 { .grid(6, @col); }
+    .grid_7 { .grid(7, @col); }
+    .grid_8 { .grid(8, @col); }
+    .grid_9 { .grid(9, @col); }
+    .grid_10 { .grid(10, @col); }
+    .grid_11 { .grid(11, @col); }
+    .grid_12 { .grid(12, @col); }
+
+    .prefix_1 { .prefix(1, @col); }
+    .prefix_2 { .prefix(2, @col); }
+    .prefix_3 { .prefix(3, @col); }
+    .prefix_4 { .prefix(4, @col); }
+    .prefix_5 { .prefix(5, @col); }
+    .prefix_6 { .prefix(6, @col); }
+    .prefix_7 { .prefix(7, @col); }
+    .prefix_8 { .prefix(8, @col); }
+    .prefix_9 { .prefix(9, @col); }
+    .prefix_10 { .prefix(10, @col); }
+    .prefix_11 { .prefix(11, @col); }
+
+    .suffix_1 { .suffix(1, @col); }
+    .suffix_2 { .suffix(2, @col); }
+    .suffix_3 { .suffix(3, @col); }
+    .suffix_4 { .suffix(4, @col); }
+    .suffix_5 { .suffix(5, @col); }
+    .suffix_6 { .suffix(6, @col); }
+    .suffix_7 { .suffix(7, @col); }
+    .suffix_8 { .suffix(8, @col); }
+    .suffix_9 { .suffix(9, @col); }
+    .suffix_10 { .suffix(10, @col); }
+    .suffix_11 { .suffix(11, @col); }
+
+    .push_1 { .push(1, @col); }
+    .push_2 { .push(2, @col); }
+    .push_3 { .push(3, @col); }
+    .push_4 { .push(4, @col); }
+    .push_5 { .push(5, @col); }
+    .push_6 { .push(6, @col); }
+    .push_7 { .push(7, @col); }
+    .push_8 { .push(8, @col); }
+    .push_9 { .push(9, @col); }
+    .push_10 { .push(10, @col); }
+    .push_11 { .push(11, @col); }
+
+    .pull_1 { .pull(1, @col); }
+    .pull_2 { .pull(2, @col); }
+    .pull_3 { .pull(3, @col); }
+    .pull_4 { .pull(4, @col); }
+    .pull_5 { .pull(5, @col); }
+    .pull_6 { .pull(6, @col); }
+    .pull_7 { .pull(7, @col); }
+    .pull_8 { .pull(8, @col); }
+    .pull_9 { .pull(9, @col); }
+    .pull_10 { .pull(10, @col); }
+    .pull_11 { .pull(11, @col); }
+
+}
+
+/* `Container */
+.container(){
+    margin-left: auto;
+    margin-right: auto;
+    width: @mWidth;
+
+    zoom: 1;
+
+    &:before, &:after{
+        .clearbasic;
+        content: '.';
+        font-size: 0;
+        line-height: 0;
+    }
+
+    &:after{
+        .clearboth;
+    }
+}
+
+.container_12{
+    .container();
+    .sets(12);
+}
+
+.container_16{
+    .container();
+    .sets(16);
+}
+
+/* Grid >> Children (Alpha ~ First, Omega ~ Last) */
+
+.alpha {
+  margin-left: 0;
+}
+
+.omega {
+  margin-right: 0;
+}
+
+/* Clear Floated Elements */
+.clear {
+    .clearboth;
+    .clearbasic;
+}
+
+.clearfix{
+    zoom: 1;
+    &:before, &:after{
+        .clearbasic;
+        content: '.';
+        font-size: 0;
+        line-height: 0;
+    }
+    &:after{
+        .clearboth;
+    }
+}
