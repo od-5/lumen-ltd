@@ -16,7 +16,7 @@ DEBUG = False
 
 TEMPLATE_DEBUG = DEBUG
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 if DEBUG:
     EMAIL_HOST = 'smtp.yandex.ru'
@@ -28,7 +28,7 @@ else:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     DEFAULT_FROM_EMAIL = 'admin@lumen-ltd.com'
     EMAIL_HOST = 'smtp.fullspace.ru'
-    EMAIL_HOST_USER = 'admin@lumen-ltd.com'
+    EMAIL_HOST_USER = 'info@lumen-ltd.com'
     EMAIL_HOST_PASSWORD = 'alena2010'
 
 # Application definition

@@ -3,7 +3,6 @@
   <div class="certificate-container">
     <div class="certificate-container-list js-certificate-slider">
       <ul class="slides">
-    {% for i in '123456' %}
       {% for certificate in certificate_list %}
         <li>
         <a href="{{ certificate.image.url }}" rel="group" class="certificate-container-list-item js-certificate" title="{{ certificate.alt|default:''}}">
@@ -11,7 +10,6 @@
         </a>
         </li>
       {% endfor %}
-    {% endfor %}
       </ul>
     </div>
   </div>
