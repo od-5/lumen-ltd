@@ -4,7 +4,7 @@ ymaps.ready(init);
 var myMap;
 
 function init(){
-    city = 'Москва';
+    city = 'Волгоград';
     var coord = ''
     var myGeocoder = ymaps.geocode(city);
         myGeocoder.then(

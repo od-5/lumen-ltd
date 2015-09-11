@@ -2,5 +2,66 @@
   <div class="grid_8 prefix_2 suffix_2">
     <p class="title calculator__title">Калькулятор расчёт экономической эффективности светильников, оборудованных светодиодными лампами "ОгоньОк", на объекте.</p>
   </div>
+  <div class="grid_4 prefix_1">
+    <div class="calculator-form">
+      <label for="type">Тип лампы</label>
+      <select name="type" id="c-type">
+        <option value="1">Лампа 600мм</option>
+        <option value="2">Лампа 1200мм</option>
+        <option value="3">Лампа 1500мм</option>
+        <option value="4">Лампа E27</option>
+        <option value="5">Лампа с 2 E27</option>
+      </select>
+      <label for="hours">Длительность работы светильника в день, часов</label>
+      <input type="text" name="hours" id="c-hours" value="12">
+      <label for="days">Количество рабочих дней в месяце</label>
+      <input type="text" name="days" id="c-days" value="30">
+      <label for="quantity">Количество светильников, шт</label>
+      <input type="text" name="quantity" id="c-quantity" value="89">
+      <button>Расчитать</button>
+    </div>
+  </div>
+  <div class="grid_7">
+    <p class="calculator-result__title">Используя лампы "ОгоньОк" экономия составляет:</p>
+    <table class="calculator-result">
+      <tr>
+        <td>за час</td>
+        <td id="hour_economy_watt"></td>
+        <td>кВт</td>
+        <td id="hour_economy_rub"></td>
+        <td>руб.</td>
+      </tr>
+      <tr>
+        <td>за день</td>
+        <td id="day_economy_watt"></td>
+        <td>кВт</td>
+        <td id="day_economy_rub"></td>
+        <td>руб.</td>
+      </tr>
+      <tr>
+        <td>за месяц</td>
+        <td id="month_economy_watt"></td>
+        <td>кВт</td>
+        <td id="month_economy_rub"></td>
+        <td>руб.</td>
+      </tr>
+      <tr>
+        <td>за год</td>
+        <td id="year_economy_watt"></td>
+        <td>кВт</td>
+        <td id="year_economy_rub"></td>
+        <td>руб.</td>
+      </tr>
+      <tr>
+        <td>за 3 года</td>
+        <td id="year3_economy_watt"></td>
+        <td>кВт</td>
+        <td id="year3_economy_rub"></td>
+        <td>руб.</td>
+      </tr>
+    </table>
+    <p class="calculator-result__text">* при расчёте учтывается ежегодный рост тарифов (примерно 10% в год), базовый
+      тариф взят а 5.00 руб./кВт</p>
+  </div>
   <div class="clear"></div>
 </section>

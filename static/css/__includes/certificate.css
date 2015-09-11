@@ -19,13 +19,38 @@
   -moz-border-radius: 45px;
   border-radius: 45px;
 }
-.certificate-container-list {
+.certificate-container-list .slides {
   list-style: none;
-  display: table-row;
+}
+.certificate-container-list .slides li {
+  margin: 0 10px;
 }
 .certificate-container-list-item {
-  display: table-cell;
-  padding: 0 5px;
   text-align: center;
   cursor: pointer;
+}
+.certificate-container-list .flex-prev, .certificate-container-list .flex-next {
+  display: block;
+  text-indent: -99999px;
+  background-image: url('fancybox_sprite.png');
+  background-repeat: no-repeat;
+  width: 36px;
+  height: 36px;
+}
+.certificate-container-list .flex-prev:hover, .certificate-container-list .flex-next:hover {
+  opacity: 0.8;
+}
+.certificate-container-list .flex-prev {
+  background-position: 50% -35px;
+}
+.certificate-container-list .flex-next {
+  background-position: 50% -70px;
+}
+.certificate-container-list .flex-direction-nav {
+  list-style-type: none;
+  text-align: center;
+}
+.certificate-container-list .flex-direction-nav li {
+  display: inline-block;
+  margin: 0 10px;
 }

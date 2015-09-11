@@ -18,13 +18,49 @@
     -moz-border-radius: 45px;
     border-radius: 45px;
     &-list {
-      list-style: none;
-      display: table-row;
+      //display: table-row;
+      .slides {
+        list-style: none;
+        li {
+          margin: 0 10px;
+        }
+      }
       &-item {
-        display: table-cell;
-        padding: 0 5px;
+        //display: table-cell;
+        //padding: 0 5px;
         text-align: center;
         cursor: pointer;
+      }
+      .flex {
+        &-prev, &-next {
+          display: block;
+          text-indent: -99999px;
+          background-image: url('fancybox_sprite.png');
+          background-repeat: no-repeat;
+          width: 36px;
+          height: 36px;
+          &:hover {
+            opacity: 0.8;
+          }
+
+        }
+        &-prev {
+          background-position: 50% -35px;
+        }
+        &-next {
+          background-position: 50% -70px;
+        }
+        &-direction {
+          &-nav {
+            list-style-type: none;
+            text-align: center;
+
+            li {
+              display: inline-block;
+              margin: 0 10px;
+            }
+          }
+        }
       }
     }
   }

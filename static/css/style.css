@@ -3911,6 +3911,19 @@ a {
   -moz-box-shadow: 0 0 10px #333;
   box-shadow: 0 0 10px #333;
 }
+#scrollup {
+  position: fixed;
+  opacity: 0.8;
+  padding: 15px 10px 10px;
+  background: #aaa;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  right: 10px;
+  bottom: 10px;
+  display: none;
+  cursor: pointer;
+}
 .header-right {
   text-align: right;
 }
@@ -4382,6 +4395,38 @@ a {
   color: #029a3b;
   text-transform: none;
 }
+.calculator-form label {
+  display: block;
+  font-size: 12px;
+}
+.calculator-form input, .calculator-form select {
+  padding: 0;
+  margin-bottom: 20px;
+  display: block;
+  width: 300px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.calculator-result {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.calculator-result tr {
+  border-bottom: 1px solid #999;
+  height: 26px;
+}
+.calculator-result tr:hover {
+  background: #f1f1f1;
+}
+.calculator-result__title {
+  line-height: 60px;
+  font-size: 19px;
+  font-weight: bold;
+}
+.calculator-result__text {
+  font-size: 12px;
+}
 .geography__text {
   font-size: 21px;
   padding: 30px;
@@ -4424,15 +4469,40 @@ a {
   -moz-border-radius: 45px;
   border-radius: 45px;
 }
-.certificate-container-list {
+.certificate-container-list .slides {
   list-style: none;
-  display: table-row;
+}
+.certificate-container-list .slides li {
+  margin: 0 10px;
 }
 .certificate-container-list-item {
-  display: table-cell;
-  padding: 0 5px;
   text-align: center;
   cursor: pointer;
+}
+.certificate-container-list .flex-prev, .certificate-container-list .flex-next {
+  display: block;
+  text-indent: -99999px;
+  background-image: url('fancybox_sprite.png');
+  background-repeat: no-repeat;
+  width: 36px;
+  height: 36px;
+}
+.certificate-container-list .flex-prev:hover, .certificate-container-list .flex-next:hover {
+  opacity: 0.8;
+}
+.certificate-container-list .flex-prev {
+  background-position: 50% -35px;
+}
+.certificate-container-list .flex-next {
+  background-position: 50% -70px;
+}
+.certificate-container-list .flex-direction-nav {
+  list-style-type: none;
+  text-align: center;
+}
+.certificate-container-list .flex-direction-nav li {
+  display: inline-block;
+  margin: 0 10px;
 }
 .footer {
   padding-top: 12px;

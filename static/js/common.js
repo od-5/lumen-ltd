@@ -116,4 +116,12 @@ $(function() {
     return false;
   });
 
+  $('.js-certificate-slider').flexslider({
+    animation: "slide",
+    animationLoop: true,
+    controlNav: false,
+    itemWidth: 178,
+    itemMargin: 3
+  });
+
 });
