@@ -12,7 +12,7 @@ function init(){
                 coord = res.geoObjects.get(0).geometry.getCoordinates();
                 myMap = new ymaps.Map("YMapsID", {
                     center: coord,
-                    zoom: 4
+                    zoom: 3
                 });
                 $.get("/map/",
                     function(e) {

@@ -2,10 +2,10 @@
   <p class="certificate__title">Вся продукция сертифицирована согласно ГОСТ Р</p>
   <div class="certificate-container">
     <div class="certificate-container-list">
-      {% for foo in '1234' %}
-        <div class="certificate-container-list-item">
-          <img src="{{ STATIC_URL }}img/sert.jpg">
-        </div>
+      {% for certificate in certificate_list %}
+        <a href="{{ certificate.image.url }}" rel="group" class="certificate-container-list-item js-certificate" title="{{ certificate.alt|default:''}}">
+          <img src="{{ certificate.image_resize.url }}" alt="{{ certificate.alt|default:''}}">
+        </a>
       {% endfor %}
     </div>
   </div>

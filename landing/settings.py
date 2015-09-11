@@ -12,7 +12,7 @@ SECRET_KEY = '_tpd9(a+n4i20i$5j6$cw^%09q=i6_r1e-j8ur-e@uw91#g@hd'
 YANDEX_MAPS_API_KEY = 'AO7kF1UBAAAA-akFCwIAR7_VYsSjwJ9g-dDEVHElLxuBQi8AAAAAAAAAAAAQMK4N7NYtvg4ALgMZ8-GRO_cQqQ=='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 TEMPLATE_DEBUG = DEBUG
 
@@ -42,9 +42,11 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'debug_toolbar',
+    'imagekit',
     'widget_tweaks',
     'annoying',
     'core',
+    'apps.certificate',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -144,5 +146,8 @@ SUIT_CONFIG = {
         {'label': u'Контакты', 'icon': 'icon-cog', 'models': ('core.contacts',)},
         {'label': u'Заявки', 'icon': 'icon-user', 'models': ('core.ticket',)},
         {'label': u'Города', 'models': ('core.city',)},
+        {'label': u'Сертификаты', 'app': 'certificate'},
     ),
 }
+
+CERTIFICATE_SIZE = [178, 254]
