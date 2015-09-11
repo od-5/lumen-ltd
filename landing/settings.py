@@ -74,26 +74,22 @@ WSGI_APPLICATION = 'landing.wsgi.application'
 
 DEBUG_TOOLBAR_PATCH_SETTINGS = False
 
-# Database
-# https://docs.djangoproject.com/en/1.7/ref/settings/#databases
-if DEBUG:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        }
-    }
-else:
-    DATABASES = {
-         'default': {
-             'ENGINE': 'django.db.backends.mysql',
-             'NAME': 'enjoyafrru_lumen',
-             'USER': 'enjoyafrru_lumen',
-             'PASSWORD': 'f3ccb431',
-             'HOST': 'localhost',
-             'PORT': '',
-         }
-    }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+DATABASES = {
+     'default': {
+         'ENGINE': 'django.db.backends.mysql',
+         'NAME': 'enjoyafrru_lumen',
+         'USER': 'enjoyafrru_lumen',
+         'PASSWORD': 'f3ccb431',
+         'HOST': 'localhost',
+         'PORT': '',
+     }
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
