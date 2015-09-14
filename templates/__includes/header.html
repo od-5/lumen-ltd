@@ -26,10 +26,12 @@
           {% endfor %}
         </ul>
       </div>
-      <div class="header-phone">
-        <p class="header-phone__number">{{ contacts.phone|default:'8(800)250-34-50' }}</p>
-        <p class="header-phone__text">Бесплатный звонок по всей России</p>
-      </div>
+      {% if LANGUAGE_CODE == 'ru' %}
+        <div class="header-phone">
+          <p class="header-phone__number">{{ contacts.phone|default:'8(800)250-34-50' }}</p>
+          <p class="header-phone__text">Бесплатный звонок по всей России</p>
+        </div>
+      {% endif %}
     </div>
   </div>
   <div class="grid_12">
