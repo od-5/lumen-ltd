@@ -34,11 +34,6 @@ $(function(){
         n_power = 6;
         lamp_count = 1;
         break;
-      case 5:
-        power = 26;
-        n_power = 6;
-        lamp_count = 2;
-        break;
       default:
         alert('Я таких значений не знаю')
     }

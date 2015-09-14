@@ -9,13 +9,26 @@
   <div class="certificate-container">
     <div class="certificate-container-list js-certificate-slider">
       <ul class="slides">
-      {% for certificate in certificate_list %}
+      {% if LANGUAGE_CODE == 'ru' %}
+        {% for certificate in certificate_list %}
+          <li>
+            <a href="{{ certificate.image.url }}" rel="group" class="certificate-container-list-item js-certificate" title="{{ certificate.alt|default:''}}">
+              <img src="{{ certificate.image_resize.url }}" alt="{{ certificate.alt|default:''}}">
+            </a>
+          </li>
+        {% endfor %}
+      {% else %}
         <li>
-        <a href="{{ certificate.image.url }}" rel="group" class="certificate-container-list-item js-certificate" title="{{ certificate.alt|default:''}}">
-          <img src="{{ certificate.image_resize.url }}" alt="{{ certificate.alt|default:''}}">
-        </a>
+          <a href="{{ STATIC_URL }}img/cert.JPG" rel="group" class="certificate-container-list-item js-certificate" title="">
+            <img src="{{ STATIC_URL }}img/cert.JPG" alt="">
+          </a>
         </li>
-      {% endfor %}
+        <li>
+          <a href="{{ STATIC_URL }}img/cert2.JPG" rel="group" class="certificate-container-list-item js-certificate" title="">
+            <img src="{{ STATIC_URL }}img/cert2.JPG" alt="">
+          </a>
+        </li>
+      {% endif %}
       </ul>
     </div>
   </div>
