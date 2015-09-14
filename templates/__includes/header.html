@@ -29,15 +29,26 @@
       {% if LANGUAGE_CODE == 'ru' %}
         <div class="header-phone">
           <p class="header-phone__number">{{ contacts.phone|default:'8(800)250-34-50' }}</p>
-          <p class="header-phone__text">Бесплатный звонок по всей России</p>
+          <p class="header-phone__text">
+            {% if LANGUAGE_CODE == 'ru' %}
+            Бесплатный звонок по всей России
+            {% else %}
+            Free call across Russia
+            {% endif %}
+          </p>
         </div>
       {% endif %}
     </div>
   </div>
   <div class="grid_12">
     <p class="header-slogan">
+      {% if LANGUAGE_CODE == 'ru' %}
       Уникальное предложение для собственников объектов коммерческой недвижимости <br>
       по экономии электроэнергии без первоначальных вложений!
+      {% else %}
+      A unique offer regarding saving energy without any initial investments <br>
+      for the owners of installations of commercial real estate.
+      {% endif %}
     </p>
   </div>
   <div class="grid_8">
@@ -55,7 +66,7 @@
             {% if LANGUAGE_CODE == 'ru' %}
               Преимущества продукции
             {% else %}
-              Advantages of our product
+              Advantages of the product
             {% endif %}
             </a>
           <a href="#stage" class="header-nav-list-item__link">
@@ -69,7 +80,7 @@
             {% if LANGUAGE_CODE == 'ru' %}
               Калькулятор расчёта экономии
             {% else %}
-              Calculator of economic efficiency
+              Calculator of savings
             {% endif %}
 
           </a>
@@ -79,7 +90,11 @@
   </div>
   <div class="grid_4">
     <p class="header-nav-slogan">
+      {% if LANGUAGE_CODE == 'ru' %}
       Сэкономленные деньги - это заработанные деньги
+      {% else %}
+      Money saved - money earned
+      {% endif %}
     </p>
   </div>
   <div class="grid_12">
@@ -90,7 +105,13 @@
         <div class="header-foto-container-triangle header-foto-container-triangle_2"></div>
       </div>
       <div class="header-foto__text">
-        <p>БЕСПЛАТНО - Расчёт экономической эффективности внедрения оборудования.</p>
+        <p>
+          {% if LANGUAGE_CODE == 'ru' %}
+          БЕСПЛАТНО - Расчёт экономической эффективности внедрения оборудования.
+          {% else %}
+          For free - Calculation of economic efficiency of the implemented plant.
+          {% endif %}
+        </p>
       </div>
     </div>
   </div>

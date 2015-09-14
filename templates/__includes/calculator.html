@@ -10,63 +10,99 @@
   </div>
   <div class="grid_4 prefix_1">
     <div class="calculator-form">
-      <label for="type">Тип лампы</label>
+      <label for="type">{% if LANGUAGE_CODE == 'ru' %}Тип лампы{% else %}Type of lamp{% endif %}</label>
       <select name="type" id="c-type">
-        <option value="1">Лампа 600мм</option>
-        <option value="2">Лампа 1200мм</option>
-        <option value="3">Лампа 1500мм</option>
-        <option value="4">Лампа E27</option>
+        <option value="1">{% if LANGUAGE_CODE == 'ru' %}Лампа 600мм{% else %}Lamp 600mm{% endif %}</option>
+        <option value="2">{% if LANGUAGE_CODE == 'ru' %}Лампа 1200мм{% else %}Lamp 1200mm{% endif %}</option>
+        <option value="3">{% if LANGUAGE_CODE == 'ru' %}Лампа 1500мм% else %}Lamp 1500mm{% endif %}</option>
+        <option value="4">{% if LANGUAGE_CODE == 'ru' %}Лампа E27% else %}Lamp E27{% endif %}</option>
       </select>
-      <label for="hours">Длительность работы светильника в день, часов</label>
+      <label for="hours">
+        {% if LANGUAGE_CODE == 'ru' %}
+        Длительность работы светильника в день, часов
+        {% else %}
+        The duration of light per day, hours
+        {% endif %}
+      </label>
       <input type="text" name="hours" id="c-hours" value="12">
-      <label for="days">Количество рабочих дней в месяце</label>
+      <label for="days">
+        {% if LANGUAGE_CODE == 'ru' %}
+        Количество рабочих дней в месяце
+        {% else %}
+        The number of working days in the month
+        {% endif %}
+      </label>
       <input type="text" name="days" id="c-days" value="30">
-      <label for="quantity">Количество ламп, шт</label>
+      <label for="quantity">
+        {% if LANGUAGE_CODE == 'ru' %}
+        Количество ламп, шт
+        {% else %}
+        The number of lamps
+        {% endif %}
+      </label>
       <input type="text" name="quantity" id="c-quantity" value="89">
-      <button>Расчитать</button>
+      <button>
+        {% if LANGUAGE_CODE == 'ru' %}
+        Расчитать
+        {% else %}
+        To calculate
+        {% endif %}
+      </button>
     </div>
   </div>
   <div class="grid_7">
-    <p class="calculator-result__title">Используя лампы "ОгоньОк" экономия составляет:</p>
+    <p class="calculator-result__title">
+      {% if LANGUAGE_CODE == 'ru' %}
+      Используя лампы "ОгоньОк" экономия составляет:
+      {% else %}
+      While using LED lamps "OgonOK" the savings compose:
+      {% endif %}
+    </p>
     <table class="calculator-result">
       <tr>
-        <td>за час</td>
+        <td>{% if LANGUAGE_CODE == 'ru' %}за час{% else %}for an hour{% endif %}</td>
         <td id="hour_economy_watt"></td>
-        <td>кВт</td>
+        <td>{% if LANGUAGE_CODE == 'ru' %}кВт{% else %}kW{% endif %}</td>
         <td id="hour_economy_rub"></td>
-        <td>руб.</td>
+        <td>{% if LANGUAGE_CODE == 'ru' %} руб.{% else %}rubles{% endif %}</td>
       </tr>
       <tr>
-        <td>за день</td>
+        <td>{% if LANGUAGE_CODE == 'ru' %}за день{% else %}for a day{% endif %}</td>
         <td id="day_economy_watt"></td>
-        <td>кВт</td>
+        <td>{% if LANGUAGE_CODE == 'ru' %}кВт{% else %}kW{% endif %}</td>
         <td id="day_economy_rub"></td>
-        <td>руб.</td>
+        <td>{% if LANGUAGE_CODE == 'ru' %}руб.{% else %}rubles{% endif %}</td>
       </tr>
       <tr>
-        <td>за месяц</td>
+        <td>{% if LANGUAGE_CODE == 'ru' %}за месяц{% else %}for a month{% endif %}</td>
         <td id="month_economy_watt"></td>
-        <td>кВт</td>
+        <td>{% if LANGUAGE_CODE == 'ru' %}кВт{% else %}kW{% endif %}</td>
         <td id="month_economy_rub"></td>
-        <td>руб.</td>
+        <td>{% if LANGUAGE_CODE == 'ru' %} руб.{% else %}rubles{% endif %}</td>
       </tr>
       <tr>
-        <td>за год</td>
+        <td>{% if LANGUAGE_CODE == 'ru' %}за год{% else %}for a year{% endif %}</td>
         <td id="year_economy_watt"></td>
-        <td>кВт</td>
+        <td>{% if LANGUAGE_CODE == 'ru' %}кВт{% else %}kW{% endif %}</td>
         <td id="year_economy_rub"></td>
-        <td>руб.</td>
+        <td>{% if LANGUAGE_CODE == 'ru' %} руб.{% else %}rubles{% endif %}</td>
       </tr>
       <tr>
-        <td>за 3 года</td>
+        <td>{% if LANGUAGE_CODE == 'ru' %}за 3 года{% else %}for a 3 years{% endif %}</td>
         <td id="year3_economy_watt"></td>
-        <td>кВт</td>
+        <td>{% if LANGUAGE_CODE == 'ru' %}кВт{% else %}kW{% endif %}</td>
         <td id="year3_economy_rub"></td>
-        <td>руб.</td>
+        <td>{% if LANGUAGE_CODE == 'ru' %} руб.{% else %}rubles{% endif %}</td>
       </tr>
     </table>
-    <p class="calculator-result__text">* при расчёте учтывается ежегодный рост тарифов (примерно 10% в год), базовый
-      тариф взят а 5.00 руб./кВт</p>
+    <p class="calculator-result__text">
+      {% if LANGUAGE_CODE == 'ru' %}
+      * при расчёте учтывается ежегодный рост тарифов (примерно 10% в год), базовый
+      тариф взят а 5.00 руб./кВт
+      {% else %}
+      * The calculation takes into account the annual growth rate (approximately 10% a year), the basic rate - 5.00 rubles/kW
+      {% endif %}
+    </p>
   </div>
   <div class="clear"></div>
 </section>
