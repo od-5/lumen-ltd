@@ -70,7 +70,7 @@ class Setup(models.Model):
             return u'Настройки'
 
     title = models.CharField(verbose_name=u'Заголовок <TITLE>...</TITLE>', max_length=256, blank=True)
-    title_en = models.CharField(verbose_name=u'Английский заголовок <TITLE>...</TITLE>', max_length=256, blank=True)
+    # title_en = models.CharField(verbose_name=u'Английский заголовок <TITLE>...</TITLE>', max_length=256, blank=True)
     email = models.EmailField(verbose_name=u'e-mail для приёма заявок', blank=True)
     video = models.TextField(verbose_name=u'HTML-код видео', blank=True, null=True)
     meta_key = models.TextField(verbose_name=u'Ключевые слова META_KEYWORDS', blank=True)
