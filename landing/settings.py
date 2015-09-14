@@ -12,7 +12,7 @@ SECRET_KEY = '_tpd9(a+n4i20i$5j6$cw^%09q=i6_r1e-j8ur-e@uw91#g@hd'
 YANDEX_MAPS_API_KEY = 'AO7kF1UBAAAA-akFCwIAR7_VYsSjwJ9g-dDEVHElLxuBQi8AAAAAAAAAAAAQMK4N7NYtvg4ALgMZ8-GRO_cQqQ=='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 TEMPLATE_DEBUG = DEBUG
 
@@ -75,22 +75,22 @@ WSGI_APPLICATION = 'landing.wsgi.application'
 
 DEBUG_TOOLBAR_PATCH_SETTINGS = False
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
 # DATABASES = {
-#      'default': {
-#          'ENGINE': 'django.db.backends.mysql',
-#          'NAME': 'enjoyafrru_lumen',
-#          'USER': 'enjoyafrru_lumen',
-#          'PASSWORD': 'f3ccb431',
-#          'HOST': 'localhost',
-#          'PORT': '',
-#      }
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
 # }
+DATABASES = {
+     'default': {
+         'ENGINE': 'django.db.backends.mysql',
+         'NAME': 'enjoyafrru_lumen',
+         'USER': 'enjoyafrru_lumen',
+         'PASSWORD': 'f3ccb431',
+         'HOST': 'localhost',
+         'PORT': '',
+     }
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
