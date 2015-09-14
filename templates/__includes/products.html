@@ -1,62 +1,104 @@
 <section class="products"><a name="products"></a>
   <div class="grid_12">
-    <p class="products__title title">Преимущества нашей продукции</p>
+    <p class="products__title title">
+      {% if LANGUAGE_CODE == 'ru' %}
+        Преимущества нашей продукции
+      {% else %}
+        Advantages of our product
+      {% endif %}
+    </p>
   </div>
   <div class="products-list">
     <div class="grid_10 suffix_1 prefix_1">
       <div class="products-list-item products-icon products-icon_1">
         <p class="products-list-item__text">
-          Длительный срок службы. При работе в номинальном режиме срок службы светодиодов составляет до
-          <span>50000</span> часов. Такая длительная эксплуатация позволяет сократить расходы на обслуживание осветительных устройств.
+          {% if LANGUAGE_CODE == 'ru' %}
+            Длительный срок службы. При работе в номинальном режиме срок службы светодиодов составляет до
+            <span>50000</span> часов. Такая длительная эксплуатация позволяет сократить расходы на обслуживание осветительных устройств.
+          {% else %}
+            Long service life.
+            During nominal operation, the service life of a life-emitted diode (LED lamp) constitutes up to <span>50 000</span> hours. Such a long-term service allows to minimize the expenses on lighting unit maintenance.
+          {% endif %}
         </p>
       </div>
     </div>
     <div class="grid_10 suffix_1 prefix_1">
       <div class="products-list-item products-icon products-icon_2">
         <p class="products-list-item__text">
-          Экономия электроэнергии до <span>90%</span>. По сравнению с традиционными источниками света, светодиодные лампы «Светозар» потребляют значительно меньше электроэнергии.
+          {% if LANGUAGE_CODE == 'ru' %}
+            Экономия электроэнергии до <span>90%</span>. По сравнению с традиционными источниками света, светодиодные лампы «Светозар» потребляют значительно меньше электроэнергии.
+          {% else %}
+            Up to <span>50%</span> energy saving.
+            In comparison with a traditional light source, LED lamps "Svetozar" consume much less electricity.
+          {% endif %}
         </p>
       </div>
     </div>
     <div class="grid_10 suffix_1 prefix_1">
       <div class="products-list-item products-icon products-icon_3">
         <p class="products-list-item__text">
-          <span>Быстрый</span> запуск и отсутствие ограничений на количество циклов «включение-выключение». Светодиод включается мгновенно и вся энергия преобразуется в видимый свет практически без потерь.
+          {% if LANGUAGE_CODE == 'ru' %}
+            <span>Быстрый</span> запуск и отсутствие ограничений на количество циклов «включение-выключение». Светодиод включается мгновенно и вся энергия преобразуется в видимый свет практически без потерь.
+          {% else %}
+            <span>Quick</span> start and lack of limitations on the number of "switching on-off" cycles.
+            LED lamps are switched on immediately and all energy is converted into visible light almost loss-free.
+          {% endif %}
         </p>
       </div>
     </div>
     <div class="grid_10 suffix_1 prefix_1">
       <div class="products-list-item products-icon products-icon_4">
         <p class="products-list-item__text">
-          <span>Устойчивость</span> к вибрационным ударам и нагрузкам, а также к различным воздействиям.
+          {% if LANGUAGE_CODE == 'ru' %}
+            <span>Устойчивость</span> к вибрационным ударам и нагрузкам, а также к различным воздействиям.
+          {% else %}
+            Vibrating <span>blow</span>, load and other exposures resistance.
+          {% endif %}
         </p>
       </div>
     </div>
     <div class="grid_10 suffix_1 prefix_1">
       <div class="products-list-item products-icon products-icon_5">
         <p class="products-list-item__text">
-          <span>Устойчивость</span> к перепадам напряжения – лампа «Светозар» устойчива к перепадам напряжения до 600 В.
+          {% if LANGUAGE_CODE == 'ru' %}
+            <span>Устойчивость</span> к перепадам напряжения – лампа «Светозар» устойчива к перепадам напряжения до 600 В.
+          {% else %}
+            Change of voltage <span>resistance</span>.
+            "Svetozar" lamps are up to 600 V change of voltage resistant.
+          {% endif %}
         </p>
       </div>
     </div>
     <div class="grid_10 suffix_1 prefix_1">
       <div class="products-list-item products-icon products-icon_6">
         <p class="products-list-item__text">
-          Лампы «Светозар» span{не создают} электромагнитных <span>помех</span> в отличие от других светодиодных и люминесцентных ламп.
+          {% if LANGUAGE_CODE == 'ru' %}
+            Лампы «Светозар» <span>не создают</span> электромагнитных <span>помех</span> в отличие от других светодиодных и люминесцентных ламп.
+          {% else %}
+            "Svetozar" lamps <span>don't cause</span> electromagnetic <span>interference</span> unlike other LED and luminescent lamps.
+          {% endif %}
         </p>
       </div>
     </div>
     <div class="grid_10 suffix_1 prefix_1">
       <div class="products-list-item products-icon products-icon_7">
         <p class="products-list-item__text">
-          <span>Отсутствие</span> ультрафиолетового и инфракрасного излучения. Это важно при освещении предметов, подверженных выцветанию – картин, фотографий, карт, тканей и т.п.
+          {% if LANGUAGE_CODE == 'ru' %}
+            <span>Отсутствие</span> ультрафиолетового и инфракрасного излучения. Это важно при освещении предметов, подверженных выцветанию – картин, фотографий, карт, тканей и т.п.
+          {% else %}
+            <span>Absence</span> of ultraviolet and infrared radiation. It's important when illuminated objects are subjected to bleaching, such as paintings, pictures, maps, fabrics etc.
+          {% endif %}
         </p>
       </div>
     </div>
     <div class="grid_10 suffix_1 prefix_1">
       <div class="products-list-item products-icon products-icon_8">
         <p class="products-list-item__text">
-          <span>Высокая</span> (более 80) передача цвета освещаемого объекта. Светильники создают благоприятный для зрения свет, максимально приближенный к естественному солнечному.
+          {% if LANGUAGE_CODE == 'ru' %}
+            <span>Высокая</span> (более 80) передача цвета освещаемого объекта. Светильники создают благоприятный для зрения свет, максимально приближенный к естественному солнечному.
+          {% else %}
+            <span>High</span> ( more than 80) color disposal of the illuminated objects. LED lamps produce friendly view light close to natural sunlight.
+          {% endif %}
         </p>
       </div>
     </div>

@@ -1,12 +1,22 @@
 <section class="geography">
   <div class="grid_12">
     <p class="geography__text">
-      Нашим оборудованием были переоснащены сети магазинов «Carrefour» в Греции, сеть магазинов «МАН», «Радеж» в  Волгоградской области, сеть аптек «АПТЕКА-а.в.е.»(бренды: "36.6", "A.v.e", "Витрум", "Старый лекарь") более 800 аптек, магазины сети "М.Видео", а также многие торговые и офисные центры на территории Московской, Тверской, Сведловской, Волгоградской области.
-Мы тесно сотрудничаем с учреждениями здравоохранения, образования и культуры
+      {% if LANGUAGE_CODE == 'ru' %}
+        Нашим оборудованием были переоснащены сети магазинов «Carrefour» в Греции, сеть магазинов «МАН», «Радеж» в  Волгоградской области, сеть аптек «АПТЕКА-а.в.е.»(бренды: "36.6", "A.v.e", "Витрум", "Старый лекарь") более 800 аптек, магазины сети "М.Видео", а также многие торговые и офисные центры на территории Московской, Тверской, Сведловской, Волгоградской области.
+        Мы тесно сотрудничаем с учреждениями здравоохранения, образования и культуры
+      {% else %}
+        The energy-saving plant "Svetozar" has been installed in the chain of stores "Carrefour" in Greece, "MAN", "Radezh" in the Volgograd region, Russia; in the chain of pharmacies "Apteka-a.v.e." in Moscow and the Moscow region and many other trading and business centers of the Moscow, Tver, Sverdlovsk, Volgograd regions.
+      {% endif %}
     </p>
   </div>
   <div class="grid_12">
-    <p class="geography__title">Мы расширяем географию нашей работы</p>
+    <p class="geography__title">
+      {% if LANGUAGE_CODE == 'ru' %}
+        Мы расширяем географию нашей работы
+      {% else %}
+        We eхpend the boundaries of cooperation.
+      {% endif %}
+    </p>
   </div>
   <div class="grid_12">
     <div class="geography-map" id="YMapsID">

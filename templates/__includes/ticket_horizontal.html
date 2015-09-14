@@ -7,8 +7,15 @@
 {#    <option value="2">Район 2</option>#}
 {#  </select>#}
   {% load widget_tweaks %}
-  {{ form.name|attr:'placeholder:Ваше имя' }}
-  {{ form.phone|attr:'placeholder:Ваш телефон' }}
-  {{ form.email|attr:'placeholder:Ваш e-mail' }}
-  <input type="submit" value="Отправить заявку" class="button">
+  {% if LANGUAGE_CODE == 'ru' %}
+    {{ form.name|attr:'placeholder:Ваше имя' }}
+    {{ form.phone|attr:'placeholder:Ваш телефон' }}
+    {{ form.email|attr:'placeholder:Ваш e-mail' }}
+    <input type="submit" value="Отправить заявку" class="button">
+  {% else %}
+    {{ form.name|attr:'placeholder:Your name' }}
+    {{ form.phone|attr:'placeholder:Your phone' }}
+    {{ form.email|attr:'placeholder:Your e-mail' }}
+    <input type="submit" value="Submit a request" class="button">
+  {% endif %}
 </form>

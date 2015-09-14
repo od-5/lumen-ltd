@@ -1,16 +1,29 @@
 <footer class="footer">
   <div class="grid_5 prefix_1">
     <ul class="footer-list">
-      <li class="footer-list-item">Юр. лицо в России</li>
-      <li class="footer-list-item">ООО "Люмен"</li>
-      <li class="footer-list-item">РФ, г.Екатеринбург, ул.Московская, д.68</li>
+      <li class="footer-list-item">
+        {% if LANGUAGE_CODE == 'ru' %}
+          Юр. лицо в России <br>
+          ООО "Люмен" <br>
+          РФ, г.Екатеринбург, ул.Московская, д.68
+        {% else %}
+          A legal entity in Russia <br>
+          LLC "Lumen" <br>
+          68, Moskovskaya Str., Ekaterinburg, Russia
+        {% endif %}
+      </li>
     </ul>
   </div>
   <div class="grid_6">
     <ul class="footer-list">
-      <li class="footer-list-item">Юр. лицо в Чехии</li>
-      <li class="footer-list-item">International Communication Technologies s.r.o.</li>
-      <li class="footer-list-item">Ostrava, Moravska Ostrava, Vystavni 1928/9, Postcode 702 00 </li>
+      <li class="footer-list-item">
+        {% if LANGUAGE_CODE == 'ru' %}
+          Юр. лицо в Чехии <br>
+        {% else %}
+          A legal entity in Czech Republic<br>
+        {% endif %}
+        International Communication Technologies s.r.o. <br>
+        Ostrava, Moravska Ostrava, Vystavni 1928/9, Postcode 702 00 </li>
     </ul>
   </div>
   <div class="clear"></div>

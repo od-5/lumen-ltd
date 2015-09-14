@@ -1,5 +1,11 @@
 <div class="certificate">
-  <p class="certificate__title">Вся продукция сертифицирована согласно ГОСТ Р</p>
+  <p class="certificate__title">
+    {% if LANGUAGE_CODE == 'ru' %}
+      Вся продукция сертифицирована согласно ГОСТ Р
+    {% else %}
+      All products are certified in accordance with GOST R.
+    {% endif %}
+  </p>
   <div class="certificate-container">
     <div class="certificate-container-list js-certificate-slider">
       <ul class="slides">

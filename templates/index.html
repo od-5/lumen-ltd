@@ -3,25 +3,49 @@
   {% include '__includes/header.html' %}
   {% include '__includes/contract.html' %}
   <section class="ticket-1 ticket-horizontal">
-    <p class="ticket-horizontal__title">Оставить заявку на консультацию нашего специалиста</p>
+    <p class="ticket-horizontal__title">
+      {% if LANGUAGE_CODE == 'ru' %}
+      Оставить заявку на консультацию нашего специалиста
+      {% else %}
+      Get expert's consultation.
+      {% endif %}
+    </p>
     {% include "__includes/ticket_horizontal.html" %}
   </section>
   {% include '__includes/products.html' %}
   {% include '__includes/stage.html' %}
   <section class="ticket-2 ticket-horizontal">
-    <p class="ticket-horizontal__title">Оставить заявку на техническое обследование объекта</p>
+    <p class="ticket-horizontal__title">
+      {% if LANGUAGE_CODE == 'ru' %}
+      Оставить заявку на техническое обследование объекта
+      {% else %}
+      Submit a request for technical inspection of the object.
+      {% endif %}
+    </p>
     {% include "__includes/ticket_horizontal.html" %}
   </section>
   {% include '__includes/calculator.html' %}
   <section class="ticket-3 ticket-horizontal">
-    <p class="ticket-horizontal__title">Оставить заявку на расчёт окупаемости срока энергосервисного контракта</p>
+    <p class="ticket-horizontal__title">
+      {% if LANGUAGE_CODE == 'ru' %}
+      Оставить заявку на расчёт окупаемости срока энергосервисного контракта
+      {% else %}
+      Request a payback period calculation of energy-service contract.
+      {% endif %}
+    </p>
     {% include "__includes/ticket_horizontal.html" %}
   </section>
   {% include '__includes/geography.html' %}
   {% include '__includes/certificate.html' %}
   <section class="ticket">
     <div class="grid_8">
-      <p class="ticket__title">ОСТАВИТЬ ЗАЯВКУ <br> на составление контракта</p>
+      <p class="ticket__title">
+      {% if LANGUAGE_CODE == 'ru' %}
+      ОСТАВИТЬ ЗАЯВКУ <br> на составление контракта
+      {% else %}
+      Submit a request <br> to draw up a contract.
+      {% endif %}
+      </p>
     </div>
     <div class="grid_4">
       <div class="ticket-form">

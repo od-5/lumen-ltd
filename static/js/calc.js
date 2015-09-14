@@ -30,7 +30,7 @@ $(function(){
         lamp_count = 1;
         break;
       case 4:
-        power = 20;
+        power = 25;
         n_power = 6;
         lamp_count = 1;
         break;

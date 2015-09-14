@@ -3949,6 +3949,25 @@ a {
 .header-phone__text {
   font-size: 8px;
 }
+.header-lang-list {
+  list-style: none;
+}
+.header-lang-list-item {
+  display: inline-block;
+}
+.header-lang-list-item__link_active {
+  color: #f25b50;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.header-lang-list-item__text {
+  font-size: 14px;
+  font-weight: bold;
+  color: #999;
+  padding-right: 10px;
+  display: block;
+}
 .header-slogan {
   margin-left: 24px;
   margin-bottom: 26px;
@@ -4292,7 +4311,7 @@ a {
   background-image: url('../img/stage/arrow_4.png');
   width: 50px;
   height: 70px;
-  bottom: -137px;
+  bottom: -118px;
   right: 49%;
 }
 .stage-icon_5:before {

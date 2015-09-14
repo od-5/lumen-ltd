@@ -4,7 +4,11 @@
       <div class="stage-row-item stage-icon stage-icon_1">
         <span class="stage-row-item__number">1</span>
         <p class="stage-row-item__text">
-          Проведение технического обследования объектов
+          {% if LANGUAGE_CODE == 'ru' %}
+            Проведение технического обследования объектов
+          {% else %}
+            Technical inspection of objects.
+          {% endif %}
         </p>
       </div>
     </div>
@@ -12,7 +16,11 @@
       <div class="stage-row-item stage-icon stage-icon_2">
         <span class="stage-row-item__number">2</span>
         <p class="stage-row-item__text">
-          Расчет показателей экономии на основании проведенного обследования
+          {% if LANGUAGE_CODE == 'ru' %}
+            Расчет показателей экономии на основании проведенного обследования
+          {% else %}
+            Savings coefficient calculation based on the monitoring.
+          {% endif %}
         </p>
       </div>
     </div>
@@ -20,7 +28,11 @@
       <div class="stage-row-item stage-icon stage-icon_3">
         <span class="stage-row-item__number">3</span>
         <p class="stage-row-item__text">
-          Предоставление коммерческого предложения и согласование условий сотрудничества.
+          {% if LANGUAGE_CODE == 'ru' %}
+            Предоставление коммерческого предложения и согласование условий сотрудничества.
+          {% else %}
+            Quotation provision and coordination of conditions of cooperation.
+          {% endif %}
         </p>
       </div>
     </div>
@@ -28,14 +40,24 @@
       <div class="stage-row-item stage-icon stage-icon_4">
         <span class="stage-row-item__number">4</span>
         <p class="stage-row-item__text">
-          Заключение контракта.
+          {% if LANGUAGE_CODE == 'ru' %}
+            Заключение контракта.
+          {% else %}
+            Contract conclusion.
+          {% endif %}
         </p>
       </div>
     </div>
     <div class="clear"></div>
   </div>
   <div class="grid_10 suffix_1 prefix_1">
-    <p class="stage__title title">Этапы контракта с коммерческими организациями</p>
+    <p class="stage__title title">
+      {% if LANGUAGE_CODE == 'ru' %}
+        Этапы контракта с коммерческими организациями
+      {% else %}
+        Stages of contract with commercial organizations
+      {% endif %}
+    </p>
   </div>
   <div class="clear"></div>
   <div class="stage-row">
@@ -43,7 +65,11 @@
       <div class="stage-row-item stage-icon stage-icon_5">
         <span class="stage-row-item__number">5</span>
         <p class="stage-row-item__text">
-          Проведение мероприятий по монтажу энергосберегающего осветительного оборудования
+          {% if LANGUAGE_CODE == 'ru' %}
+            Проведение мероприятий по монтажу энергосберегающего осветительного оборудования
+          {% else %}
+            Installation of the energy-saving plant.
+          {% endif %}
         </p>
       </div>
     </div>
@@ -51,7 +77,11 @@
       <div class="stage-row-item stage-icon stage-icon_6">
         <span class="stage-row-item__number">6</span>
         <p class="stage-row-item__text">
-          Предоставление Актов выполненных работ по договору
+          {% if LANGUAGE_CODE == 'ru' %}
+            Предоставление Актов выполненных работ по договору
+          {% else %}
+            Issue of the certificate of completion according to the contract.
+          {% endif %}
         </p>
       </div>
     </div>
@@ -59,7 +89,11 @@
       <div class="stage-row-item stage-icon stage-icon_7">
         <span class="stage-row-item__number">7</span>
         <p class="stage-row-item__text">
-          Выплата Организацией ежемесячного платежа согласно условиям договора
+          {% if LANGUAGE_CODE == 'ru' %}
+            Выплата Организацией ежемесячного платежа согласно условиям договора
+          {% else %}
+            Monthly payments by a client according to the contract.
+          {% endif %}
         </p>
       </div>
     </div>
@@ -67,7 +101,11 @@
       <div class="stage-row-item stage-icon stage-icon_8">
         <span class="stage-row-item__number">8</span>
         <p class="stage-row-item__text">
-          По истечению срока действия договора, переход оборудования в собственность Организации. В период гарантийного срока производится замена ламп и их обслуживание.
+          {% if LANGUAGE_CODE == 'ru' %}
+            По истечению срока действия договора, переход оборудования в собственность Организации. В период гарантийного срока производится замена ламп и их обслуживание.
+          {% else %}
+            As the contract period expires, the energy-saving plant passes into client's ownership.
+          {% endif %}
         </p>
       </div>
     </div>

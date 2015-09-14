@@ -1,6 +1,12 @@
 <section class="calculator"><a name="calculator"></a>
   <div class="grid_8 prefix_2 suffix_2">
-    <p class="title calculator__title">Калькулятор расчёта экономической эффективности светильников, оборудованных светодиодными лампами "ОгоньОк", на объекте.</p>
+    <p class="title calculator__title">
+      {% if LANGUAGE_CODE == 'ru' %}
+        Калькулятор расчёта экономической эффективности светильников, оборудованных светодиодными лампами "ОгоньОк", на объекте.
+      {% else %}
+        Calculator of economic efficiency of luminaries equipped with LED lamps "OgonOk" at the installation.
+      {% endif %}
+    </p>
   </div>
   <div class="grid_4 prefix_1">
     <div class="calculator-form">

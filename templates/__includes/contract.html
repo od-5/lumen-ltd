@@ -1,16 +1,34 @@
 <section class="contract"><a name="contract"></a>
   <div class="grid_8 prefix_2 suffix_2">
-    <p class="contract__title title">Преимущества энергосервисного контракта с нами</p>
+    <p class="contract__title title">
+      {% if LANGUAGE_CODE == 'ru' %}
+        Преимущества энергосервисного контракта с нами
+      {% else %}
+        Advantages of the energy-service contract with our company:
+      {% endif %}
+    </p>
   </div>
   <div class="contract-container">
     <div class="grid_4">
       <div class="contract-container-item">
         <div class="contract-container-item__icon contract-container-item__icon_1"></div>
         <div class="contract-container-item__title">
-          <p>Без вложений</p>
+          <p>
+            {% if LANGUAGE_CODE == 'ru' %}
+              Без вложений
+            {% else %}
+              No investment
+            {% endif %}
+          </p>
         </div>
         <div class="contract-container-item__text">
-          <p>Поставка и монтаж энергосберегающего оборудования осуществляется за счет средств, инвестируемых нашим предприятием .Таким образом вложения со стороны переоборудуемого объекта не требуются.</p>
+          <p>
+            {% if LANGUAGE_CODE == 'ru' %}
+              Поставка и монтаж энергосберегающего оборудования осуществляется за счет средств, инвестируемых нашим предприятием .Таким образом вложения со стороны переоборудуемого объекта не требуются.
+            {% else %}
+              Delivery and installation of energy-saving plant is accomplished at the expense of finances invested by our company. Suchwise, the investment from the owners of the re-tooling objects are not required.
+            {% endif %}
+          </p>
         </div>
       </div>
     </div>
@@ -18,10 +36,22 @@
       <div class="contract-container-item">
         <div class="contract-container-item__icon contract-container-item__icon_2"></div>
         <div class="contract-container-item__title">
-          <p>Возврат средств за счёт экономии</p>
+          <p>
+            {% if LANGUAGE_CODE == 'ru' %}
+              Возврат средств за счёт экономии
+            {% else %}
+              Refunds due to economy.
+            {% endif %}
+          </p>
         </div>
         <div class="contract-container-item__text">
-          <p>Возврат денежных средств будет осуществлен исключительно за счет получаемой экономии и, как следствие, высвободившихся денежных средств.</p>
+          <p>
+            {% if LANGUAGE_CODE == 'ru' %}
+              Возврат денежных средств будет осуществлен исключительно за счет получаемой экономии и, как следствие, высвободившихся денежных средств.
+            {% else %}
+              Refunds will be implemented only due to the economy and as a result due to the savings received.
+            {% endif %}
+          </p>
         </div>
       </div>
     </div>
@@ -29,10 +59,22 @@
       <div class="contract-container-item">
         <div class="contract-container-item__icon contract-container-item__icon_3"></div>
         <div class="contract-container-item__title">
-          <p>Оборудование переходит в собственность</p>
+          <p>
+            {% if LANGUAGE_CODE == 'ru' %}
+              Оборудование переходит в собственность
+            {% else %}
+              Power-generating plant passes into client's ownership.
+            {% endif %}
+          </p>
         </div>
         <div class="contract-container-item__text">
-          <p>По истечении срока договора внедренное оборудование переходит в собственность учреждения, в котором оно было установлено.</p>
+          <p>
+            {% if LANGUAGE_CODE == 'ru' %}
+              По истечении срока договора внедренное оборудование переходит в собственность учреждения, в котором оно было установлено.
+            {% else %}
+              After the contract expiration, the implemented plant will pass into ownership of the company to which the service was provided.
+            {% endif %}
+          </p>
         </div>
       </div>
     </div>
@@ -41,10 +83,22 @@
       <div class="contract-container-item">
         <div class="contract-container-item__icon contract-container-item__icon_4"></div>
         <div class="contract-container-item__title">
-          <p>Экономия сразу</p>
+          <p>
+            {% if LANGUAGE_CODE == 'ru' %}
+              Экономия сразу
+            {% else %}
+              Instant savings.
+            {% endif %}
+          </p>
         </div>
         <div class="contract-container-item__text">
-          <p>Проведение мероприятий по экономии энергетических ресурсов позволит сэкономить на плановой замене ламп и сопутствующего энергооборудования и на его обслуживание и ремонте.</p>
+          <p>
+            {% if LANGUAGE_CODE == 'ru' %}
+              Проведение мероприятий по экономии энергетических ресурсов позволит сэкономить на плановой замене ламп и сопутствующего энергооборудования и на его обслуживание и ремонте.
+            {% else %}
+              As a result of the energy-saving arrangements, the company under service saves on the planned lamp replacement connected with the power-generating plant, its service and repair.
+            {% endif %}
+          </p>
         </div>
       </div>
     </div>
@@ -52,15 +106,25 @@
       <div class="contract-container-item">
         <div class="contract-container-item__icon contract-container-item__icon_5"></div>
         <div class="contract-container-item__title">
-          <p>Не нужен договор на утилизацию</p>
+          <p>
+            {% if LANGUAGE_CODE == 'ru' %}
+              Не нужен договор на утилизацию
+            {% else %}
+              No reclamation contract required.
+            {% endif %}
+          </p>
         </div>
         <div class="contract-container-item__text">
-          <p>Внедренное оборудование не содержит и не передает в атмосферу вредных веществ и химических соединений и, следовательно, не требует специальных условий утилизации и оформления документации по экологическим нормативам, а значит Организации не требуется договор на утилизацию.</p>
+          <p>
+            {% if LANGUAGE_CODE == 'ru' %}
+              Внедренное оборудование не содержит и не передает в атмосферу вредных веществ и химических соединений и, следовательно, не требует специальных условий утилизации и оформления документации по экологическим нормативам, а значит Организации не требуется договор на утилизацию.
+            {% else %}
+              Implemented plant maintains no harmful substances neither for people's health, nor for the environment. Consequently, it requires no reclamation and no ecological standard documents.
+            {% endif %}
+          </p>
         </div>
       </div>
     </div>
-
-
     <div class="clear"></div>
   </div>
   <div class="clear"></div>

@@ -7,7 +7,24 @@
   <div class="grid_6">
     <div class="header-right">
       <div class="header-lang">
-        <span>Выбор языка</span>
+        {% load i18n %}
+        {% get_current_language as LANGUAGE_CODE %}
+        <ul class="header-lang-list">
+          <li class="header-lang-list-item">
+            <span class="header-lang-list-item__text">
+              {% if LANGUAGE_CODE == 'ru' %}
+              Выбор языка:
+              {% else %}
+                Select language:
+              {% endif %}
+            </span>
+          </li>
+
+          {% get_language_info_list for LANGUAGES as languages %}
+          {% for language in languages %}
+            <li class="header-lang-list-item"><a href="/{{ language.code }}/" class="header-lang-list-item__link{% if LANGUAGE_CODE == language.code %} header-lang-list-item__link_active{% endif %}">{{ language.code }}</a></li>
+          {% endfor %}
+        </ul>
       </div>
       <div class="header-phone">
         <p class="header-phone__number">{{ contacts.phone|default:'8(800)250-34-50' }}</p>
@@ -25,10 +42,35 @@
     <nav class="header-nav">
       <ul class="header-nav-list">
         <li class="header-nav-list-item">
-          <a href="#contract" class="header-nav-list-item__link">Преимущества контракта</a>
-          <a href="#products" class="header-nav-list-item__link">Преимущества продукции</a>
-          <a href="#stage" class="header-nav-list-item__link">Этапы контракта</a>
-          <a href="#calculator" class="header-nav-list-item__link">Калькулятор расчёта экономии</a>
+          <a href="#contract" class="header-nav-list-item__link">
+            {% if LANGUAGE_CODE == 'ru' %}
+              Преимущества контракта
+            {% else %}
+              Advantages of contracts
+            {% endif %}
+          </a>
+          <a href="#products" class="header-nav-list-item__link">
+            {% if LANGUAGE_CODE == 'ru' %}
+              Преимущества продукции
+            {% else %}
+              Advantages of our product
+            {% endif %}
+            </a>
+          <a href="#stage" class="header-nav-list-item__link">
+            {% if LANGUAGE_CODE == 'ru' %}
+              Этапы контракта
+            {% else %}
+              Stages of contract
+            {% endif %}
+          </a>
+          <a href="#calculator" class="header-nav-list-item__link">
+            {% if LANGUAGE_CODE == 'ru' %}
+              Калькулятор расчёта экономии
+            {% else %}
+              Calculator of economic efficiency
+            {% endif %}
+
+          </a>
         </li>
       </ul>
     </nav>
