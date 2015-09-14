@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
   <meta charset="UTF-8">
-  <title>{{ setup.title|default:'Название сайта' }}</title>
+  <title>
+    {% if LANGUAGE_CODE == 'ru' %}
+    {{ setup.title|default:'Название сайта' }}
+    {% else %}
+      {{ setup.title_en|default:'Название сайта' }}
+    {% endif %}
+  </title>
   <meta name="description" content="{{ setup.meta_desc|default:'' }}">
   <meta name="keywords" content="{{ setup.meta_key|default:'' }}">
   <script src="{{ STATIC_URL }}js/jquery-1.11.2.min.js"></script>
