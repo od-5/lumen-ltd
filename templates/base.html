@@ -14,7 +14,11 @@
   <meta name="description" content="{{ setup.meta_desc|default:'' }}">
   <meta name="keywords" content="{{ setup.meta_key|default:'' }}">
   <script src="{{ STATIC_URL }}js/jquery-1.11.2.min.js"></script>
+{% if LANGUAGE_CODE == 'ru' %}
   <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+{% else %}
+  <script src="http://api-maps.yandex.ru/2.1/?lang=en_US" type="text/javascript"></script>
+{% endif %}
   <script src="{{ STATIC_URL }}js/jquery.form.js"></script>
   <script src="{{ STATIC_URL }}js/jquery.validate.js"></script>
   <script src="{{ STATIC_URL }}js/jquery.flexslider-min.js"></script>
