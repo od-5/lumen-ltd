@@ -23,7 +23,7 @@ def ticket_form(request):
             ticket = form.save(commit=False)
             ticket.status = 1
             ticket.save()
-            message = u'Имя: %s\nТелефон:%s\nE-mail: %s\n' % (ticket.name, ticket.phone, ticket.phone)
+            message = u'Имя: %s\nТелефон:%s\nE-mail: %s\n' % (ticket.name, ticket.phone, ticket.email)
             print settings.EMAIL_HOST_USER
             send_mail(
                 u'lumen-ltd.com - Заявка с сайта',
